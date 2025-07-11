@@ -1,0 +1,447 @@
+body {
+    background-image: url("./images/1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    
+}
+@media (max-width: 768px) {
+    .name {
+        font-size: 36px;
+        margin-top: 20vh;
+    }
+    .title {
+        font-size: 1em;
+        margin-top: 5px;
+    }
+    body {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 24px;
+        margin-top: 10vh;
+    }
+    .title {
+        font-size: 0.9em;
+        margin-top: 2px;
+    }
+    body {
+        background-size: cover;
+    }
+}
+.name {
+    font-family: 'cedarville cursive', cursive;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    margin-top: 40vh;
+    font-weight: bold;
+}
+.title {
+    font-family: 'sans serif', sans-serif;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font: italic small-caps bold 1.2em/2 'sans serif', sans-serif;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.row
+{
+    margin-top: 350px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+svg {
+    align-items: center;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+:root {
+    --lavender-primary: #967bb6;
+    --lavender-secondary: #b399d4;
+    --lavender-light: #e6e6fa;
+    --lavender-dark: #6a4a8a;
+    --text-dark: #333;
+    --text-light: #f8f8ff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--lavender-light);
+    background-image: url("./images/1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--lavender-primary);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--lavender-dark);
+}
+
+a {
+    color: var(--lavender-dark);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--lavender-primary);
+}
+
+.btn-secondary {
+    background-color: var(--lavender-primary);
+    border-color: var(--lavender-primary);
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--lavender-dark);
+    border-color: var(--lavender-dark);
+}
+
+.site-footer {
+    background-color: var(--lavender-dark);
+    color: var(--text-light);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-link {
+    color: var(--text-light);
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--lavender-light);
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--lavender-light);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--lavender-primary);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--lavender-dark);
+    transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.name, .title {
+    animation: fadeInUp 1s ease-out;
+}
+
+.card {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+
+.hobby-card, .timeline-item, .contact-method {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+
+.hobby-card:nth-child(1) { animation-delay: 0.1s; }
+.hobby-card:nth-child(2) { animation-delay: 0.2s; }
+.hobby-card:nth-child(3) { animation-delay: 0.3s; }
+
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+
+
+
+.btn:hover, .social-icon:hover, .skill-tag:hover {
+    animation: pulse 0.5s ease;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.hero-section {
+    background: linear-gradient(135deg, var(--lavender-primary) 0%, var(--lavender-dark) 100%);
+    color: white;
+    text-align: center;
+    padding: 8rem 1rem 10rem;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.name {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.scroll-indicator {
+    margin-top: 3rem;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.content-section {
+    padding: 4rem 0;
+    flex: 1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--lavender-dark);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+}
+
+
+.card-container {
+    margin-top: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    padding: 2rem 0 1rem;
+    color: var(--lavender-primary);
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--lavender-dark);
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 992px) {
+    .name {
+        font-size: 3.5rem;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 6rem 1rem 8rem;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+    .name {
+        font-size: 2.8rem;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 4rem 1rem 6rem;
+    }
+    .name {
+        font-size: 2.2rem;
+    }
+    .scroll-indicator {
+        font-size: 1.5rem;
+    }
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+
+
